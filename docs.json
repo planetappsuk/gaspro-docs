@@ -22,6 +22,7 @@
         "group": "Certificates",
         "pages": [
           "certificates/index",
+          "certificates/homeowner-walkthrough",
           "certificates/types",
           "certificates/send"
         ]
