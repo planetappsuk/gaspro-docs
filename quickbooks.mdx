@@ -3,14 +3,32 @@ title: "QuickBooks"
 description: "Connect GasPro to QuickBooks from the mobile app."
 ---
 
-The QuickBooks integration lets you connect your QuickBooks account so invoices
-and customers can be kept in sync.
+The QuickBooks integration connects your QuickBooks account so GasPro can send
+customers and invoices to QuickBooks. It is a **one-way sync**: GasPro sends data
+to QuickBooks, and nothing is imported back.
 
 <Note>
   QuickBooks is currently connected from the mobile app under
   **Settings → Integrations**. The desktop app does not have a QuickBooks
   settings screen.
 </Note>
+
+## What syncs
+
+GasPro syncs automatically in the background every 15 minutes.
+
+- **Customers** created after you connect QuickBooks.
+- **Invoices** created after you connect, once they are no longer drafts.
+- GasPro checks QuickBooks for an existing customer or invoice first, to avoid
+  creating duplicates.
+
+## What does not sync
+
+- Changes made in QuickBooks are not brought back into GasPro.
+- Quotes and estimates are not sent to QuickBooks.
+- Records created before you connected are not backfilled.
+- GasPro does not overwrite a customer or invoice that already exists in
+  QuickBooks.
 
 ## Connect QuickBooks
 
