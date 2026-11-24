@@ -34,6 +34,18 @@ address book or from a CSV file.
 Imported records appear in the relevant list. Check a few after importing to
 make sure the columns were read correctly.
 
+### Customer and job address columns
+
+The customer and job address template uses these columns, in order:
+
+`name`, `email`, `mobile`, `home_phone`, `apt`, `street`, `city`, `postcode`,
+`country`, `notes`, `company`, `next_inspection_date`, `reference`
+
+The last column, `reference`, is the optional **Unique Reference** and is
+imported for both customers and job addresses. The customer-only columns
+(`notes`, `company` and `next_inspection_date`) are ignored when you import job
+addresses.
+
 ## Import appliances
 
 Appliance import is available in the mobile app.
@@ -55,7 +67,8 @@ Appliance import is available in the mobile app.
 Check the following:
 
 - The file is a **CSV**, not an Excel workbook (`.xlsx`).
-- The column headings match the template exactly.
+- The column headings match the template exactly, including `reference` if you
+  use unique references.
 - Dates use the format shown in the template.
 - Required fields are filled in for every row.
 - The file is under the size limit (10 MB on desktop for customers and job

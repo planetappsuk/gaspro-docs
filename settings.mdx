@@ -13,7 +13,7 @@ Open the **Settings** tab.
 | Section | What it controls |
 | --- | --- |
 | Profile information | Your name, email, phone, Gas Safe ID, oil registration and CSC ID, plus your signature. |
-| Business information | Company name, contact details, registrations, bank details, payment terms and logo. |
+| Business information | Company name, contact details, registrations, bank details, payment terms, logo, and email CC and BCC defaults. |
 | Certificate, Invoice, Quote & Estimate Settings | Start numbers, due dates and reminders. |
 | Manage Users | Team members and their permissions. |
 | GasPro AI | Ask GasPro AI a question, optionally with a photo. |
@@ -53,13 +53,21 @@ Company details appear on certificates, invoices, quotes and estimates.
 | --- | --- |
 | Company | Company Name, Company Email, Phone Number, VAT Number, Industry |
 | CC emails | Certificates CC Email, Invoices CC Email, Quotes CC Email, Estimates CC Email |
+| BCC emails | Certificates BCC Email, Invoices BCC Email, Quotes BCC Email, Estimates BCC Email |
 | Address | Apartment/Suite, Street Address, City, Postcode, Country |
 | Registrations | Gas Safe Registration Number, Legionella Registration Number, Oil Registration Number |
 | Banking | Bank Name, Name on Account, Account Number, Sort Code, Payment Terms — shown on invoices |
 | Logo | Company Logo, used on your documents |
 
 The CC email fields automatically copy your office or accounts team when a
-document is sent.
+document is sent. If a CC field is blank, GasPro falls back to the company email.
+
+The BCC email fields send a blind copy to the matching address. GasPro only
+sends a BCC when the field contains an address, so leave a field blank if you do
+not want a blind copy.
+
+These defaults apply to certificates, invoices, quotes and estimates. You can
+still change the recipients in the email composer when you send a document.
 
 ## Certificate, invoice and quote settings
 

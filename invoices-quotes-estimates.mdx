@@ -76,13 +76,18 @@ Open a document from its list to see the PDF and its details.
   </Tab>
 </Tabs>
 
-The email composer lets you add **To** and **CC** recipients, edit the
+The email composer lets you add **To**, **CC** and **BCC** recipients, edit the
 **Subject** and **Message**, and add attachments. The PDF is included.
 
 <Tip>
-  Set default CC addresses for invoices, quotes and estimates in
-  **Settings → Company**.
+  Set default CC and BCC addresses for invoices, quotes and estimates in
+  **Settings → Company** (desktop) or **Settings → Business information**
+  (mobile). CC copies fall back to the company email when blank. A BCC is only
+  sent when a BCC address is set.
 </Tip>
+
+If the customer or job address has a **Unique Reference**, it prints in the
+**Bill To** and **Job Address** blocks of the PDF.
 
 ## Statuses
 
@@ -124,5 +129,6 @@ On desktop, each type has its own page with search and filters for **Status**,
 
 <Warning>
   Deleting an invoice, quote or estimate is permanent. Download the PDF first if
-  you may need a copy.
+  you may need a copy. The delete option is only available to users with the
+  **Delete Certificates, Invoices, Quotes & Estimates** permission.
 </Warning>

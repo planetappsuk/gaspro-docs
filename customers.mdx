@@ -4,7 +4,9 @@ description: "Add and manage the people and companies you work for."
 ---
 
 Customers are the people or businesses you work for. Keep a customer's contact
-details and address here, then link them to jobs, certificates and invoices.
+details and address here, then link them to jobs, certificates and invoices. You
+can also give each customer an optional **Unique Reference** to match them to
+your own records.
 
 <Tip>
   A customer is the person or company. The property you visit is a
@@ -19,7 +21,7 @@ details and address here, then link them to jobs, certificates and invoices.
     1. Open **Dashboard → Customers**.
     2. Tap **Create New Customer**.
     3. Enter at least a **Name** and **Email**. You can also add **Mobile**,
-       **Home Phone** and **Company**.
+       **Home Phone**, **Company** and a **Unique Reference**.
     4. Tap **Search for Address** to find the address, or enter the **Apt**,
        **Street**, **City**, **Postcode** and **Country** yourself.
     5. Optionally add a **Next Inspection Date** and **Additional Notes**.
@@ -30,7 +32,8 @@ details and address here, then link them to jobs, certificates and invoices.
     1. Open **Customers** in the sidebar.
     2. Select **Create Customer**.
     3. Enter the customer's **Full Name** and **Email**, plus **Company**,
-       **Mobile Number** and **Home Phone** if you have them.
+       **Mobile Number**, **Home Phone** and **Unique Reference** if you have
+       them.
     4. Search for the address or enter **Apartment/Unit**, **Street**, **City**,
        **Postcode** and **Country**.
     5. Optionally add a **Next Inspection Date** and **Notes**.
@@ -46,10 +49,18 @@ can change this in **Settings → Form Settings**.
 ## Find and view a customer
 
 On mobile, use the search bar at the top of the customer list. On desktop, use
-the search box to search by name, email, company or address.
+the search box to search by name, reference, email, company or address.
 
-Open a customer to see their record. Use the **Call**, **Text**, **Email** and
-**Map** buttons to contact them or open their address.
+Open a customer to see their record. Use the **Call**, **Text** and **Email**
+buttons to contact them. On mobile, tap **Navigate** to open the address in your
+maps app. On desktop, select **Map**.
+
+<Info>
+  A customer's **Unique Reference** is searchable in the customer list and when
+  linking a customer to a job, certificate, invoice, quote or estimate. It is
+  shown on the customer record and printed in the **Bill To** block of invoice,
+  quote and estimate PDFs.
+</Info>
 
 <Tabs>
   <Tab title="Mobile">
@@ -87,7 +98,8 @@ Rather than typing each customer, you can import a list:
 
   <Tab title="Desktop">
     On the **Customers** page select **Import customers**, download the CSV
-    template, fill it in and upload it. CSV files can be up to 10 MB. See
+    template, fill it in and upload it. CSV files can be up to 10 MB. The
+    template includes a `reference` column for unique references. See
     [Importing data](/importing).
   </Tab>
 </Tabs>
@@ -99,6 +111,7 @@ Rather than typing each customer, you can import a list:
 | Name / Full Name | The customer's name. Required. |
 | Email | Used for sending certificates and invoices. Required for new customers. |
 | Company | The customer's business, if they have one. |
+| Unique Reference | An optional reference from your own system. Searchable and printed on invoices, quotes and estimates. |
 | Mobile / Home Phone | Contact numbers shown on the customer record. |
 | Apartment/Unit, Street, City, Postcode, Country | The customer's address. |
 | Next Inspection Date | Default reminder date until a certificate sets its own. |

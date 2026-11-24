@@ -5,7 +5,8 @@ description: "Store the properties you visit, with their appliances and contact 
 
 A job address is the property where you carry out work. It holds the site
 contact details and the appliances at that property, so you can reuse them on
-future certificates and appointments.
+future certificates and appointments. You can also give each job address an
+optional **Unique Reference** to match it to your own records.
 
 <Tip>
   Create the [customer](/customers) first, then create a job address for their
@@ -21,8 +22,9 @@ future certificates and appointments.
     1. Open **Dashboard → Job Addresses**.
     2. Tap **Create New Job Address**.
     3. Choose the customer this property belongs to, or create a new customer.
-    4. Check the contact details and enter the property address. Tap **Search
-       for Address** to fill the address automatically.
+    4. Check the contact details, add a **Unique Reference** if you use one,
+       and enter the property address. Tap **Search for Address** to fill the
+       address automatically.
     5. Add **Additional Notes** if needed and tap **Save**.
     6. Open the **Appliances** tab to add appliances at the property.
   </Tab>
@@ -31,12 +33,23 @@ future certificates and appointments.
     1. Open **Job Addresses** in the sidebar.
     2. Select **Create Job Address**.
     3. Enter the site contact's **Full Name** and optionally **Email**,
-       **Mobile Number** and **Home Phone**.
+       **Mobile Number**, **Home Phone** and **Unique Reference**.
     4. Enter the property address, or search for it.
     5. Add **Notes** and select **Create Job Address**.
     6. Use the **Appliances** tab to add the appliances at this property.
   </Tab>
 </Tabs>
+
+## Job address fields
+
+| Field | What it is for |
+| --- | --- |
+| Name | The site contact's name. |
+| Email | Used when sending documents to the site contact. |
+| Mobile / Home Phone | Contact numbers for the site. |
+| Unique Reference | An optional reference from your own system. Searchable and printed on invoices, quotes and estimates. It is separate from a job's own reference. |
+| Apartment/Unit, Street, City, Postcode, Country | The property address. |
+| Notes | Anything your team needs to know. |
 
 ## Appliances
 
@@ -66,10 +79,18 @@ open the job address, go to **Appliances** and add the appliance from there.
 
 ## Find and view a job address
 
-Search the job address list by contact name, phone, email or address. Open a
-record to see the contact details, address, notes and linked appliances. Use the
-**Call**, **Text**, **Email** and **Map** buttons to contact the site or open the
-property in maps.
+Search the job address list by contact name, reference, phone, email or address.
+Open a record to see the contact details, address, notes and linked appliances.
+Use the **Call**, **Text** and **Email** buttons to contact the site. On mobile,
+tap **Navigate** to open the property in your maps app. On desktop, select
+**Map**.
+
+<Info>
+  A job address **Unique Reference** is searchable in the job address list and
+  when linking a job address to a job, certificate, invoice, quote or estimate.
+  It is shown on the record and printed in the **Job Address** block of invoice,
+  quote and estimate PDFs.
+</Info>
 
 On mobile, edit a job address and use the **Details**, **Documents** and
 **Appliances** tabs. **Documents** is split into **Certificates**, **Invoices**,
@@ -101,6 +122,7 @@ From a job address you can:
 
   <Tab title="Desktop">
     On the **Job Addresses** page select **Import job addresses**, download the
-    CSV template, complete it and upload it. CSV files can be up to 10 MB.
+    CSV template, complete it and upload it. CSV files can be up to 10 MB. The
+    template includes a `reference` column for unique references.
   </Tab>
 </Tabs>
